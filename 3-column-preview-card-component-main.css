@@ -1,11 +1,11 @@
 @font-face {
     font-family: "bigShouldersDisplay";
-    src: url("../fonts/BigShouldersDisplay-ExtraBold.ttf") format("truetype");
+    src: url("BigShouldersDisplay-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "lexendDeca-regular";
-    src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    src: url("LexendDeca-Regular.ttf") format("truetype");
 }
 
 body {
