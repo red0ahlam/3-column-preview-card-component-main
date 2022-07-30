@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "bigShouldersDisplay";
+    src: url("../fonts/BigShouldersDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "lexendDeca-regular";
+    src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: "lexendDeca-regular";
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main-content {
+    width: 95%;
+}
+
+h1 {
+    font-family: "bigShouldersDisplay";
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    padding: 3em;
+}
+
+.col-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.col-1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+.col-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.col-2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+.col-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.col-3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    padding: 1em 2em;
+    border-radius: 3rem;
+    border: white solid 2px;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 1em;
+
+}
+
+button:hover {
+    color: white;
+    border: white solid 2px;
+    background-color: inherit;
+}
+
+@media (min-width: 500px) {
+    .main-content {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .main-content {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 33.3%;
+        max-width: 12rem;
+        min-height: 23rem;
+        position: relative;
+    }
+
+    button {
+        position: absolute;
+        bottom: 2.5rem;
+    }
+
+    .col-1 {
+        border-top-right-radius: 0rem;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+
+    .col-3 {
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+}
